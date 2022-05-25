@@ -1,0 +1,414 @@
+
+<html>
+<head><title>GUIDEZUP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+background-image:url('header-image.jpg');
+background-repeat: no-repeat;
+backgrond-position:cover;
+background-size: 1445px 920px;
+}
+ul li{ list-style: none;}
+
+
+.navbar{
+    position: relative;
+    height: 10vh;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+.logo {
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+
+.header .logo,
+.header .navbar a
+{ 
+    color:white;
+}
+
+
+
+.navbar{ 
+    padding: 1rem 4rem;
+}
+
+.header .navbar .logo{
+    float: left;
+}
+
+.header .navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+
+.header .navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    
+}
+
+
+
+
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+.abc {
+display:flex;
+background-color:#D47AE8;
+padding:7px;
+font:Roboto Condensed;
+flex-direction:row;
+text-align:center;
+border-radius: 25px;
+font-family:"papyrus",fantasy;
+}
+
+
+
+.font {
+  font-size:50px;
+  text-shadow: 3px 3px 3px #F4BEEE;
+  text-align:center;
+  color:white;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.here {
+text-align:center;
+align:center;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+border-radius:25px;
+margin:40px 400px;
+padding:5px;
+color:#FFCCD2;
+}
+.goa {
+background-color:#ECDBBA;
+width:1000px;
+align:center;
+display:flex;
+margin:30px 100px;
+
+}
+.image1 {
+width:400px;
+border:5px #FDFF8F;
+}
+.paragoa {
+font-family:"papyrus",fantasy;
+margin:8px;
+}
+.button1 {
+padding: 14px 40px;
+width:20%;
+font-size:15px;
+border-radius:30px;
+align:center;
+background-color:#F4BEEE;
+}
+
+.button2 {
+text-align:center;
+border-radius:25px;
+background-color:#121212;
+padding:10px 40px;
+font-size:18px;
+cursor: pointer;
+margin:0px 600px;
+color:white;
+}
+.button:hover {
+background-color:#2C272E;
+}
+.login {
+float:right;
+margin:5px 30px;
+
+}
+.explore {
+text-decoration:none;
+color:white;
+align:center;
+}
+.ex {
+width: 300px;
+display:flex;
+}
+.ex1 {
+width:100px;
+height:100px;
+}
+
+
+
+
+
+
+
+
+
+.row {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#D9CAB3;
+  overflow-y: auto;
+  transition: 1.0s;
+color:black;
+}
+
+.left {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.row a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.row a:hover, .row a:focus {
+  color: black;
+}
+
+.row .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .row {overflow-y: auto;}
+  .row a {font-size: 20px}
+  .row .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+#mySearch {
+  width: 80%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+.hill1 {
+float: left;
+width: 25%;
+margin-right: 1%;
+margin-bottom: 0.5em;
+height:35%;
+margin-left:10%;
+}
+.hill2 {
+float: left;
+width: 25%;
+margin-right: 1%;
+margin-bottom: 0.5em;
+height:35%;
+}
+.hill3 {
+float: left;
+width: 25%;
+margin-right: 1%;
+margin-bottom: 0.5em;
+height:35%;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+.hello {
+display:flex;
+margin-left:10%;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: 70%;
+box-shadow: 5px 5px 7px 5px black;
+border-radius:25px;
+}
+
+.image1 {
+  display: block;
+  width: 70%;
+  height: 70%;
+box-shadow: 5px 5px 7px 5px black;
+border-radius:25px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: silver;
+border-radius:25px;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+<header class="header">
+
+    <nav class="navbar">
+        <h1 class="logo">GuidezUP</h1>
+
+      <ul class="nav-items">
+
+      <li class="nav-item"><a href="group.html">Home</a></li>
+      <li class="nav-item"><a href="C:\Users\indian\Desktop\GuidezUP\about us.html">About</a></li>
+      <li class="nav-item"><a href="C:\Users\indian\Desktop\GuidezUP\contact us.html">Contact</a></li>
+     <li class="nav-item"><a href="C:\Users\indian\Desktop\GuidezUP\login.html">Login</a></li>
+     <li class="nav-item"><a href="C:\Users\indian\Desktop\GuidezUP\payment gateway.html">Membership</a></li>
+      </ul>  
+
+ </nav>
+<br>
+<p class="font"><b>Welcome to GuidezUP</b></p>
+<br><br><br><br>
+<h3 class="here">from <b>HERE</b> to <b>EVERYWHERE</b><br>GuidezUp will guide you to the best places in India.<br>One click and you'll 
+find the best places in India that you'll never regret.<br>
+Different cultures, foods and vibes.<br> <b>JUST EXPLORE</b></h3>
+<br>
+
+
+<div class="row" id="myNav">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="left">
+ <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+<ul id="myMenu">
+  <li><a href="C:\Users\indian\Desktop\GuidezUP\goa.html">Goa</a></li>
+<li><a href="C:\Users\indian\Desktop\GuidezUP\jaipur.html">Jaipur</a></li>
+  <li><a href="C:\Users\indian\Desktop\GuidezUP\chandigarh.html">Chandigarh</a></li>
+  <li><a href="C:\Users\indian\Desktop\GuidezUP\MANALI.html">Manali</a></li>
+  <li><a href="C:\Users\indian\Desktop\GuidezUP\amritsar.html">Amritsar</a></li>
+  <li><a href="#">Leh-Ladakh</a></li>
+  <li><a href="C:\Users\indian\Desktop\GuidezUP\CHENNAI.html">Chennai</a></li>
+  <li><a href="C:\Users\indian\Desktop\GuidezUP\agra.html">Agra</a></li>
+  <li><a href="#">Vrindavan</a></li>
+<li><a href="C:\Users\indian\Desktop\GuidezUP\jammu and kashmir.html">Jammu and Kashmir</a></li>
+  <li><a href="#">Ooty</a></li>
+  <li><a href="#">Kerela</a></li>
+  <li><a href="#">Kolkata</a></li>
+<li><a href="#">Mumbai</a></li>
+<li><a href="#">Sikkim</a></li>
+<li><a href="#">Kochi</a></li>
+<li><a href="#">Bengaluru</a></li>
+<li><a href="#">Rishikesh</a></li>
+<li><a href="#">Ahmedabad</a></li>
+<li><a href="#">Shimla</a></li>
+<li><a href="#">Puducherry</a></li>
+<li><a href="#">Mysuru</a></li>
+<li><a href="#">Bikaner</a></li>
+</ul>
+</div>
+</div>
+
+
+
+<div class="hello">
+<div class="container">
+  <img src="C:\Users\indian\Desktop\GuidezUP\hills-station-india.jpg" alt="Avatar" class="image1">
+  <div class="overlay">
+    <div class="text">Hill-Stations</div>
+  </div>
+  </div>
+  <br>
+  <div class="container">
+  <img src="C:\Users\indian\Desktop\GuidezUP\beach group.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Beaches</div>
+  </div>
+  </div>
+  <br>
+  <div class="container">
+  <img src="C:\Users\indian\Desktop\GuidezUP\temple culture.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Holy Places</div>
+  </div>
+  </div>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><button class="button button2">Explore</button></span>
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+</body>
+</html>
