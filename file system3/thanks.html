@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+    .bg-modal {
+	background-color: rgba(18, 211, 195, 0.8);
+	width: 40%;
+	height: 50%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+    margin-left: 25%;
+    margin-top:13%;
+    font-size:25;
+
+}
+.button {
+    background-color: rgb(156, 0, 0);
+    align-items: center;
+    justify-content: center;
+    width:30%;
+    text-decoration: none;
+    color:white;
+    margin:45%;
+    padding:10px;
+}
+.button::after {
+    opacity:0;
+}
+.modal {
+    background-color: black;
+    display: flex;
+}
+
+</style>
+</head>
+<body>
+    <div>
+        <a href="#" id="button" class="button">Submit</a>
+    </div>
+    <div class="modal">
+    <div class="bg-modal">
+        Thanks for the feedback. 
+    </div>
+    </div>
+    <script>
+        document.getElementById('button').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "flex";
+});
+    </script>
+</body>
+</html>
